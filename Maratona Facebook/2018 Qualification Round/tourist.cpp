@@ -24,34 +24,40 @@ int main(){
            // printf("%s \n", atracoes[j]);
         }
 
-        int x=0;
-        for (int j = 0; j < k; j++)
-        {
 
-            for (unsigned long y = 0; y < v; y++)
+        //DESCOBRIR COMO CRIAR O X !!!!!!!!!!!!!!
+        int x=(k*v);
+        if (x>n)
+        {
+            while (x>n)
             {
-                if (x>=n){
-                    x=0;
-                }
-                x++;
+                x=x/n;
             }
+            x++;
         }
+        
+        
 
         x--;
         printf("Case #%d:", i+1);
-        int cont =0;
-        for (int j = 0; j < (k-(n-x)); j++)
+        if (k==1)
         {
-            printf(" %s", atracoes[j]);
-            cont++;
-        }
-
-        for (int j = x; j < n && cont<k; j++)
+            printf(" %s", atracoes[x]);
+        }else
         {
-            printf(" %s", atracoes[j]);
-            cont++;
-        }
+            for (int j = 0; j < (k-1) && j!=x ; j++)
+            {
+                printf(" %s", atracoes[j]);
 
+            }
+
+            for (int j = x; j < k; j++)
+            {
+                printf(" %s", atracoes[j]);
+
+            }
+        }
+        
         printf("\n");
         
     }
