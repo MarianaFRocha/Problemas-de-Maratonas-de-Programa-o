@@ -1,0 +1,21 @@
+4
+4 2 1
+LikeSign
+Arcade
+SweetStop
+SwagStore
+4 2 2
+LikeSign
+Arcade
+SweetStop
+SwagStore
+4 2 3
+LikeSign
+Arcade
+SweetStop
+SwagStore
+4 2 4
+LikeSign
+Arcade
+SweetStop
+SwagStore
