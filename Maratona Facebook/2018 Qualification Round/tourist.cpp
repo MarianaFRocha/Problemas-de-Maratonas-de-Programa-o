@@ -21,8 +21,9 @@ int main(){
         for (int j = 0; j < n; j++)
         {
             scanf("%s", atracoes[j]);
-           // printf("%s \n", atracoes[j]);
+            printf("%s \n", atracoes[j]);
         }
+        printf("ok");
 
         printf("Case #%d:", i+1);
         if(k==n){
@@ -35,10 +36,11 @@ int main(){
         }else
         {
             
+            //otimizar calculo 
             int x=0, aux=n-k;
             for (unsigned long j = 0; j < v; j++)
             {
-                if(x==0){
+                if(x<=0){
                     x=n-aux;
                 }
                 else
@@ -47,39 +49,23 @@ int main(){
                 }           
             }
             
+           // printf ("\n x: %d aux:%d \n", x, aux);
 
-    /*
-
-            if (aux>n)
-            {
-                while (aux>n)
-                {
-                    aux=aux/n;
-                }
-                aux++;
-            }
-
-            x=aux;
-
-    */
-    //        printf ("caso %d x: %d \n", i+1, x);
-
-            
 
             if(k==1){
-                printf(" %s", atracoes[x]);
+                printf(" %s", atracoes[x+1]);
             }else
             {
                 for (int j = 0; j < n; j++)
                 {
-                    if(x<j && j>=(x+aux)){
+                    if(j<x || (x+aux)<=j){
                         printf(" %s", atracoes[j]);
                     }
                 }
             }
-
+            
         }
-        printf("\n");
+        printf("\n");       
        
     }
     
