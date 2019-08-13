@@ -1,6 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//AINDA NAO FUNCIONA
+
+
 int main(){
 
     //numero de campus - casos
@@ -23,7 +26,7 @@ int main(){
             scanf("%s", atracoes[j]);
             printf("%s \n", atracoes[j]);
         }
-        printf("ok");
+        //printf("ok");
 
         printf("Case #%d:", i+1);
         if(k==n){
