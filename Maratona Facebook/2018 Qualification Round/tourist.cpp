@@ -38,7 +38,6 @@ int main(){
             
         }else
         {
-            
             //otimizar calculo 
             int x=0, aux=n-k;
             for (unsigned long j = 0; j < v; j++)
